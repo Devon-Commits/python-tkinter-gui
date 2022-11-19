@@ -9,6 +9,12 @@ root.option_add("*tearOff", False) #removes tearoff from top of menu
 
 
 # Functions
+def new_window():
+    window_two = Toplevel()
+    window_two.title("Again!")
+    window_two.geometry("300x300")
+    window_two.iconbitmap("c:/pythondev/gui/newicon.ico")
+
 def clicked():
     global label_greeting
     answer_one = entry_name.get()
@@ -66,6 +72,8 @@ menu_settings.add_command(label="Flux Capacitance", command=flux)
 menu_settings.add_command(label="Brightness", command=blank_command)
 menu_settings.add_command(label="Sound", command=blank_command)
 
+# Dropdown Menu
+
 
 # Labels
 label_header = Label(root, text="App Header", fg="blue", bg="#00ffff", font=("TkDefaultFont",25), relief="ridge", width=100)
@@ -95,10 +103,12 @@ label_settings_flux.pack(padx=10, pady=10)
 button_submit = Button(frame_file_new, text="Submit", command=clicked)
 button_hide = Button(frame_file_new, text="Hide", command=hide)
 button_show = Button(frame_file_new, text="Show", command=show)
+button_window = Button(frame_settings_flux, text="New Window", command=new_window)
 
 button_submit.grid(row=0,column=0, columnspan=3, padx=1, pady=1)
 button_hide.grid(row=1,column=1, padx=1)
 button_show.grid(row=1,column=2, padx=1)
+button_window.pack()
 
 
 
