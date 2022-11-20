@@ -20,8 +20,6 @@ Conversion Options:
 
 Once you hit the "Calculate!" button it will do the necessary calculation and output the result in the blue frame!
 
-This project was developed in a python virtual environment.
-
 ![screencap of calculator](calculator-preview.png?raw=true)
 
 * This project was developed in a python virtual environment (virt)
