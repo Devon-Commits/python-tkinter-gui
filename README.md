@@ -22,7 +22,7 @@ Once you hit the "Calculate!" button it will do the necessary calculation and ou
 
 This project was developed in a python virtual environment.
 
-![screencap of calculator](GUI/calculator-preview.png?raw=true)
+![screencap of calculator](calculator-preview.png?raw=true)
 
 * This project was developed in a python virtual environment (virt)
 * gui.py was my testing area for various tkinter widget functionality but does not affect how convert-units.py runs
